@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main > div{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50%;
+}
+.child1{
+    animation: move 1s linear 0.1s infinite;
+}
+.child2{
+    animation: move 1s linear 0.3s infinite;
+}
+.child3{
+    animation: move 1s linear 0.5s infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+    transform: translateY(-30px);
+    }
+    100%{
+    transform: translateY(0);
+    }
+}
